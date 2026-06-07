@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------
+   Print-shop rebrand overrides (kept separate from the verbatim
+   original index.css). Loaded after index.css.
+   ------------------------------------------------------------------ */
+
+/* Main "machine" is now a multifunction printer still image.
+   Size it to exactly overlay the 16:9 machine stage (same footprint as
+   `_machineOverlay_1yr6s_1`) so the hit-area %-coordinates line up. */
+._videoContainer_1xyyf_1 img.printerMachine {
+  width: 177.7777vh;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 48%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  /* modest enlarge for hero presence + nudge the printer toward center */
+  transform: translateX(-44%) scale(1.12);
+  transform-origin: 24% 56%;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  ._videoContainer_1xyyf_1 img.printerMachine {
+    width: 100%;
+    height: 56.25vw;
+    aspect-ratio: auto;
+  }
+}

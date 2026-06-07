@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+
+# build output
+dist
+
+# reverse-engineering scratch (original vendor bundle + notes — not for publishing)
+ref/
+
+# unused candidate images
+public/assets/press.jpg
+
+# os / logs
+.DS_Store
+*.log
+npm-debug.log*
+
+# local editor/tooling config
+.claude/
+
+# unused machine video (28MB, not referenced by the app)
+public/assets/bfcm_final_loop_v3_usdonly.mp4
