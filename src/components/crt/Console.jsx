@@ -8,7 +8,7 @@ import Bouncer from './Bouncer.jsx'
 export default function Console() {
   const { snakeEnabled, canEnableSnake, handleQuit } = useSnake()
   const { setOverride } = usePage()
-  const blinkText = snakeEnabled ? 'SNEK' : 'GPTN'
+  const blinkText = snakeEnabled ? 'SNEK' : 'TIPS'
 
   return (
     <>
@@ -32,9 +32,9 @@ export default function Console() {
         ) : null}
         {canEnableSnake ? null : (
           <div className="_gptn_nag8h_284">
-            Powered by G.P.T.N
+            Powered by TIPS
             <br />
-            Global Payments and Treasury Network
+            Experiment for many ways to bind paper
           </div>
         )}
       </div>

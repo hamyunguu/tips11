@@ -3,48 +3,47 @@ import { usePage } from '../../state/PageContext.jsx'
 import { cx } from '../../lib/cx.js'
 import Console from './Console.jsx'
 
-const LOGO_MARK = `======  =====   // ==== ===   === (TM)
-===  == ===    //===    ==== ====
-======  ===== // ===    == === ==
-===  == ===  //  ===    == === ==
-======  === //     ==== ==  =  ==
+const LOGO_MARK = `===== === ====  ====  (TM)
+  =    =  =   = =
+  =    =  ====  ====
+  =    =  =        =
+  =   === =     ====
 
-[ BUSINESS FLOW CONTROL MONITOR ]`
+[ PAPER BINDING EXPERIMENT MONITOR ]`
 
-const LOGO_META = `     BF/CM MK II
+const LOGO_META = `      TIPS MK II
 SERIAL 42-42-42
-         API V1`
+        VER 1.0`
 
 const BOOT_TEXT = `
-STRIPE BIOS -- V42.42
+TIPS BIOS -- V42.42
 12 degrees POST driver
 
 --- System health check start ---
 
-EXOTHERMIC RADIATOR
-  [WARMED]
+PAPER FEED TRAY
+  [LOADED]
 
-FEEDBACK LOOP MODULE
-  [SEEKING]
+INK RESERVOIR
+  [FULL]
 
-SETTING USER PRIORITIES
-  [FIRST]
+FOLDING UNIT
+  [ALIGNED]
 
-MACROS
-  [OPTIMIZED]
+BINDING MODULE
+  [READY]
 
-GLOBAL FINANCIAL INFRASTRUCTURE
-  [ONLINE]
-
-WARMING CACHE
-  [DONE]
+TRIM BLADE
+  [SHARP]
 
 POST INITIALIZATION SEQUENCE
   [DONE]
 
 --- System health check end ---
 
-BF/CM MK II BOOT READY`
+EXPERIMENT FOR MANY WAYS TO BIND PAPER
+
+TIPS MK II BOOT READY`
 
 // CRT terminal shell (original `Zd`).
 // 60-tick boot (50ms) → 2s delay → done; flashOut fade reveals the 3D scene.

@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useMotionValue, useAnimationFrame } from 'framer-motion'
 import { clamp } from '../../lib/math.js'
 import { useMeasure } from '../../lib/useMeasure.js'
-import BfcmLogo from './BfcmLogo.jsx'
+import TipsLogo from './TipsLogo.jsx'
 
 // DVD-bounce screensaver (original `Ud`).
 export default function Bouncer() {
@@ -30,7 +30,7 @@ export default function Bouncer() {
   return (
     <div ref={containerRef} className="_bouncerContainer_nag8h_313">
       <motion.div className="_bouncer_nag8h_313" ref={bouncerRef} style={{ x, y }}>
-        <BfcmLogo className="_bouncerSvg_nag8h_335" />
+        <TipsLogo className="_bouncerSvg_nag8h_335" />
       </motion.div>
     </div>
   )
