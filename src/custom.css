@@ -11,13 +11,13 @@
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  object-position: center 48%;
+  /* bias slightly upward so the printer base never clips on ultra-wide screens
+     (the 16:9 stage is top-aligned and overflows vertically past 16:9) */
+  object-position: center 42%;
   position: absolute;
   left: 50%;
   top: 0;
-  /* modest enlarge for hero presence + nudge the printer toward center */
-  transform: translateX(-44%) scale(1.12);
-  transform-origin: 24% 56%;
+  transform: translateX(-50%);
 }
 
 @media (min-aspect-ratio: 16 / 9) {
