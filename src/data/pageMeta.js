@@ -1,7 +1,9 @@
 // 24 booklet pages — texture (mirrored PNG), title, tooltip textContent.
 // Verbatim from original `pageMeta`. Texture filenames preserve original hashes
 // (pages 11/12/13 keep their %20-encoded spaces to match the mirrored files).
-export const PAGE_META = [
+import { asset } from '../lib/asset.js'
+
+const PAGES = [
   { texture: '/assets/00-intro-jklatvzn.png', title: 'BF/CM User Manual', textContent: 'A supplemental manual to help guide you' },
   { texture: '/assets/01-intro-page-d778gt84.png', title: 'Intro', textContent: 'X' },
   { texture: '/assets/02-toc-est9cawd.png', title: 'Table of Contents', textContent: 'X' },
@@ -27,3 +29,5 @@ export const PAGE_META = [
   { texture: '/assets/22-intentionally-blank-fdtvx8n1.png', title: 'Questions and comments', textContent: '' },
   { texture: '/assets/23-back-cover-h9s1qby6.png', title: 'Back', textContent: '' },
 ]
+
+export const PAGE_META = PAGES.map((p) => ({ ...p, texture: asset(p.texture) }))

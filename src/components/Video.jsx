@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { asset } from '../lib/asset.js'
 
 // Looping "machine" background video (original `Ah`). On mount it signals
 // live, fades itself in, and parallax-pans with the mouse on portrait screens.
@@ -34,7 +35,7 @@ export default function Video({ onLiveChange }) {
 
   return (
     <div className="_videoContainer_1xyyf_1" ref={ref}>
-      <img className="printerMachine" src="/assets/printer.jpg" alt="Office printer" draggable={false} />
+      <img className="printerMachine" src={asset('/assets/printer.jpg')} alt="Office printer" draggable={false} />
     </div>
   )
 }

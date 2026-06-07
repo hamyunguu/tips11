@@ -1,9 +1,10 @@
 import { Howl, Howler } from 'howler'
 import { useEffect, useState } from 'react'
+import { asset } from '../lib/asset.js'
 
 // Sound bank (original `pi`). Sources point at the locally-mirrored mp3s
 // under /assets/audio (same files as videos.stripeassets.com originals).
-const A = '/assets/audio'
+const A = asset('/assets/audio')
 const bank = {
   open1: new Howl({ src: `${A}/open-1.mp3`, volume: 1 }),
   open2: new Howl({ src: `${A}/open-2.mp3`, volume: 1 }),
